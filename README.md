@@ -2,9 +2,14 @@
 
 The open-source version of [JupiterMeet](https://jupitersoftwares.io/products/jupitermeet), a self-hosted video conferencing solution built with WebRTC.
 
+
 It comes with its own signaling server and does not rely on any third-party paid APIs or meeting services. This means you can host unlimited video meetings on your own server with full control over your data, branding, and infrastructure.
 
 JupiterMeet Lite is designed for developers, startups, and teams who want a lightweight, customizable, and self-hosted WebRTC meeting solution without usage-based costs.
+
+It is a practical open-source alternative to platforms like Zoom and Jitsi for teams that want more control over hosting, customization, and data ownership.
+
+**[Read the Documentation](https://docs.jupitersoftwares.io/jupitermeet-lite)**
 
 ---
 
