@@ -1,0 +1,687 @@
+[data-bs-theme-base="neutral"] {
+  --tblr-gray-50: #fafafa;
+  --tblr-gray-100: #f5f5f5;
+  --tblr-gray-200: #e5e5e5;
+  --tblr-gray-300: #d4d4d4;
+  --tblr-gray-400: #a3a3a3;
+  --tblr-gray-500: #737373;
+  --tblr-gray-600: #525252;
+  --tblr-gray-700: #404040;
+  --tblr-gray-800: #262626;
+  --tblr-gray-900: #171717;
+  --tblr-gray-950: #0a0a0a;
+}
+
+/*-- custom css start here --*/
+.page-body {
+  margin-top: 20px;
+}
+
+/*-- header css start here --*/
+[data-bs-theme="light"] .navbar {
+  background-color: var(--tblr-primary);
+}
+
+.jm-join-link {
+  color: var(--tblr-primary);
+}
+
+.jm-header-profile {
+  gap: 15px;
+}
+
+.Jm-upgrade-btn {
+  height: 40px;
+}
+
+.nav-link,
+.nav-link-icon {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.jm-profile-name {
+  color: #ffffff;
+}
+
+.jm-designation {
+  color: #ffffff !important;
+}
+
+.navbar-expand-md .nav-item.active:after {
+  border-color: #ffffff;
+}
+
+.navbar-toggler-icon {
+  color: #ffffff;
+}
+
+/*-- header css end here --*/
+/*-- dashboard css start here --*/
+.jm-header-left,
+.jm-header-right {
+  padding: var(--tblr-card-cap-padding-y) var(--tblr-card-cap-padding-x);
+}
+
+.jm-meeting-header {
+  border-bottom: var(--tblr-card-border-width) solid var(--tblr-card-border-color);
+}
+
+.jm-header-right {
+  gap: 20px;
+}
+
+.jm-instant-meeting {
+  gap: 15px;
+}
+
+.jm-right {
+  gap: 15px;
+}
+
+.jm-meeting-actions {
+  gap: 15px;
+  white-space: nowrap;
+}
+
+.jm-addto-btn {
+  gap: 20px;
+}
+
+.jm-addto-btn a {
+  gap: 8px;
+}
+
+.jm-addto-btn a.jm-btn-google-calender {
+  color: #4285f4;
+}
+
+.jm-addto-btn a.jm-btn-microsoft-outlook {
+  color: #117bd6;
+}
+
+.jm-meeting-card {
+  border-bottom: var(--tblr-card-border-width) solid var(--tblr-card-border-color);
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.jm-meeting-card.active,
+.list-group-transparent .list-group-item.active {
+  background-color: rgba(var(--tblr-secondary-rgb), .08) !important;
+}
+
+.nav-pills .jm-meeting-card.nav-link {
+  border-radius: 0px;
+}
+
+.jm-meeting-search {
+  padding: 15px 20px;
+}
+
+.jm-pagination {
+  padding: 15px 20px;
+}
+
+.jm-meeting-detail {
+  padding: 30px 20px 30px 30px;
+}
+
+.jm-invite-list {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+button.link.jm-join-link {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+[dir="rtl"] button.link.jm-join-link {
+  right: unset;
+  left: 10px;
+}
+
+.jm-meeting-date {
+  gap: 8px;
+}
+
+.nav-pills .nav-link.active {
+  position: relative;
+}
+
+.nav-pills .nav-link.active::after {
+  content: "";
+  border-right: 3px solid;
+  position: absolute;
+  width: 10px;
+  left: -7px;
+  bottom: 0;
+  top: 0;
+  right: auto;
+}
+
+.ts-dropdown {
+  z-index: 1056;
+}
+
+.jm-meeting-heading .jm-meeting-actions a {
+  margin-left: 10px;
+}
+
+.jm-meeting-embed {
+  font-size: 12px;
+  resize: none;
+  height: 89px;
+}
+
+.jm-meeting-card .text-truncate {
+  max-width: 550px;
+}
+
+.meeting-title {
+  max-width: 330px !important;
+}
+
+.jm-meeting-date .text-truncate {
+  max-width: 300px;
+}
+
+[data-bs-theme=dark] .toast-header {
+  background: unset;
+  color: var(--tblr-white);
+}
+
+/*-- dashboard css end here --*/
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  max-width: 1480px;
+}
+
+/*-- footer css start here --*/
+.footer {
+  padding: 1rem;
+}
+
+.jm-footer-menu {
+  gap: 20px;
+}
+
+/*-- footer css end here --*/
+
+/*-- Loader css starts here --*/
+#cover-spin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 9999;
+  display: block;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#cover-spin::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 48%;
+  top: 40%;
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-color: var(--bs-primary);
+  border-top-color: transparent;
+  border-width: 4px;
+  border-radius: 50%;
+  -webkit-animation: spin 0.8s linear infinite;
+  animation: spin 0.8s linear infinite;
+}
+
+/*-- Loader css end here --*/
+
+[type="radio"].hide-radio {
+  display: none;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:disabled,
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)) !important;
+  border: 1px solid linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)) !important;
+  background-color: var(--tblr-primary);
+  border-color: var(--tblr-primary);
+}
+
+/*-- profile css start here --*/
+.jm-profile .jm-header-right {
+  padding: 0;
+}
+
+.navbar-expand-md .nav-item.active .nav-link,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #fff;
+}
+
+.g-recaptcha {
+  overflow: hidden;
+  width: 298px;
+  height: 74px;
+}
+
+.g-recaptcha iframe {
+  margin: -1px 0px 0px -2px;
+}
+
+.hero {
+  padding: 6.5rem 0;
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: var(--tblr-font-weight-black);
+  letter-spacing: -.04em;
+  line-height: 1.2;
+}
+
+.hero-description {
+  color: var(--tblr-secondary);
+  font-size: var(--tblr-font-size-h2);
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 45rem;
+}
+
+.hero-description-wide {
+  max-width: 61.875rem;
+}
+
+.navbar-logo {
+  width: auto;
+  height: 2rem;
+}
+
+.logo-image {
+  height: 2rem;
+  width: auto;
+}
+
+.pricing-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  vertical-align: bottom;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured {
+  z-index: 1;
+  border: 2px solid var(--tblr-primary);
+  order: -1;
+  transform: scale(1.05);
+}
+
+/* Demo CSS Start */
+.z-50 {
+  z-index: 50;
+}
+
+.start-8 {
+  inset-inline-end: 2rem;
+}
+
+.bottom-8 {
+  bottom: 3rem;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.duration-300 {
+  transition-duration: .3s;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .15s;
+}
+
+.bg-\[\#262626\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity, 1));
+}
+
+[data-bs-theme=dark] .bg-\[\#262626\] {
+  --tw-bg-opacity: 1;
+  background-color: white;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.size-12 {
+  width: 3rem;
+  height: 3rem;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+/* Demo CSS End */
+
+@media (min-width: 768px) {
+  .featured {
+    order: unset;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-shadow: 0 0 4px rgba(var(--tblr-body-color-rgb), .04);
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-description {
+    font-size: var(--tblr-font-size-h3);
+  }
+}
+
+@media (min-width: 992px) {
+
+  :host,
+  :root {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/*-- Responsive css start here --*/
+/*--mobile css start here--*/
+@media screen and (max-width: 767px) {
+
+  .featured {
+    transform: unset;
+  }
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 100%;
+  }
+
+  .btn-outline-primary,
+  .Jm-upgrade-btn,
+  .btn-outline-danger {
+    font-size: 0px;
+    width: 41px;
+    height: 41px;
+  }
+
+  .jm-header-profile {
+    gap: 10px;
+  }
+
+  .jm-instant-meeting {
+    width: 100%;
+  }
+
+  .jm-join-meeting {
+    width: 100%;
+  }
+
+  .jm-header-left {
+    padding: 0 15px 15px 15px;
+  }
+
+  .jm-meeting-detail {
+    padding: 15px 20px;
+  }
+
+  .text-secondary {
+    font-size: 12px;
+  }
+
+  .jm-meeting-heading .jm-meeting-actions a {
+    margin: 0;
+  }
+
+  body {
+    font-size: 13px;
+  }
+
+  .jm-addto-btn {
+    flex-direction: column;
+  }
+
+  .jm-meeting-detail {
+    padding: 10px 15px;
+  }
+
+  .jm-meeting-card {
+    padding: 15px;
+  }
+
+  .jm-pagination {
+    padding: 15px;
+  }
+
+  .jm-meeting-search {
+    padding: 15px;
+  }
+
+  .jm-header-right {
+    padding: 15px;
+  }
+
+  .jm-meeting-card .text-truncate {
+    max-width: 300px;
+  }
+
+  .jm-meeting-id {
+    width: 130px;
+  }
+
+  .jm-meeting-date {
+    width: 60%;
+  }
+
+  .jm-meeting-date .text-truncate {
+    width: 110px;
+  }
+
+  .jm-meeting-date .text-truncate {
+    width: 140px;
+  }
+
+  .meeting-title {
+    max-width: 200px !important;
+  }
+}
+
+/*--ipad css start here--*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 100%;
+  }
+
+  .btn-outline-primary,
+  .Jm-upgrade-btn {
+    font-size: 0px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .jm-header-profile {
+    gap: 10px;
+  }
+
+  .jm-instant-meeting {
+    width: 100%;
+  }
+
+  .jm-join-meeting {
+    width: 100%;
+  }
+
+  .jm-header-left {
+    padding: 0 15px 15px 15px;
+  }
+
+  .jm-meeting-detail {
+    padding: 15px 20px;
+  }
+
+  .text-secondary {
+    font-size: 12px;
+  }
+
+  .jm-meeting-heading .jm-meeting-actions a {
+    margin: 0;
+  }
+
+  body {
+    font-size: 13px;
+  }
+
+  .jm-addto-btn {
+    gap: 10px;
+  }
+
+  .jm-addto-btn a {
+    gap: 3px;
+    font-size: 12px;
+  }
+
+  .jm-meeting-detail {
+    padding: 10px 15px;
+  }
+
+  .jm-meeting-card {
+    padding: 15px;
+  }
+
+  .jm-pagination {
+    padding: 15px;
+  }
+
+  .jm-meeting-search {
+    padding: 15px;
+  }
+
+  .jm-header-right {
+    padding: 15px;
+  }
+}
+
+/*--ipad  pro css start here--*/
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 100%;
+  }
+
+  .jm-meeting-card .text-truncate {
+    max-width: 355px;
+  }
+}
+
+/*--laptop css start here--*/
+@media screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 100%;
+  }
+
+  /* .jm-join-meeting {
+      width: 41%;
+   } */
+
+  .page-body {
+    margin-top: 10px;
+  }
+
+  .jm-meeting-card {
+    padding: 13px 20px;
+  }
+
+  .jm-meeting-detail {
+    padding: 25px 20px 25px 25px;
+  }
+
+  .jm-meeting-card .text-truncate {
+    max-width: 440px;
+  }
+
+  .jm-meeting-date p.text-truncate {
+    max-width: 220px;
+  }
+
+  .jm-meeting-actions a {
+    margin-left: 5px;
+  }
+}
+
+/*-- custom css end here --*/

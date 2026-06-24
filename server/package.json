@@ -1,0 +1,17 @@
+{
+    "name": "jupitermeet-lite-server",
+    "description": "Signalling server for JupiterMeet Lite",
+    "version": "3.0.4",
+    "scripts": {
+        "local": "node local.js",
+        "live": "pm2 start app.js --name 'jupitermeet_lite-server'"
+    },
+    "dependencies": {
+        "dotenv": "^16.5.0",
+        "express": "^5.1.0",
+        "node-cron": "^4.1.1",
+        "node-fetch": "^3.3.2",
+        "openai": "^5.6.0",
+        "socket.io": "^4.8.1"
+    }
+}

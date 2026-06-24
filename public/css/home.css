@@ -1,0 +1,387 @@
+/*-- custom css start here --*/
+[data-bs-theme-base="neutral"] {
+    --tblr-gray-50: #fafafa;
+    --tblr-gray-100: #f5f5f5;
+    --tblr-gray-200: #e5e5e5;
+    --tblr-gray-300: #d4d4d4;
+    --tblr-gray-400: #a3a3a3;
+    --tblr-gray-500: #737373;
+    --tblr-gray-600: #525252;
+    --tblr-gray-700: #404040;
+    --tblr-gray-800: #262626;
+    --tblr-gray-900: #171717;
+    --tblr-gray-950: #0a0a0a;
+}
+
+.page-body {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.jm-homepage .navbar {
+    background: transparent;
+    box-shadow: none;
+}
+
+.jm-meeting-join {
+    margin-top: -56px;
+}
+
+.jm-home-bg.bg-cover {
+    background-color: var(--tblr-primary);
+}
+
+.section {
+    padding: 5.5rem 0;
+}
+
+.jm-features,
+.jm-faq {
+    background-color: var(--tblr-homebg);
+}
+
+.jm-about-icons svg {
+    width: 50px;
+    height: 50px;
+    color: var(--tblr-primary);
+}
+
+.jm-about-bigicon svg.icon {
+    height: 250px;
+    width: 250px;
+    color: var(--tblr-primary);
+}
+
+.jm-icon-box svg {
+    height: 35px;
+    width: 35px;
+}
+
+.jm-icon-box span {
+    background-color: var(--tblr-primary);
+    color: var(--tblr-white);
+    border-radius: var(--tblr-border-radius);
+    height: 50px;
+    width: 50px;
+}
+
+[data-bs-theme=dark] .navbar-brand-image {
+    filter: invert(100%);
+}
+
+.jm-how-to-use {
+    color: var(--tblr-white);
+}
+
+[data-bs-theme=dark] .section-light {
+    background-color: #333333;
+}
+
+[data-bs-theme=light] .section-light {
+    background-color: #f2f2f2;
+}
+
+.ribbon.bg-green {
+    border-color: var(--tblr-primary);
+}
+
+.ribbon-bookmark {
+    background-color: var(--tblr-primary) !important;
+}
+
+.ribbon-top {
+    width: 2.5rem;
+}
+
+.ribbon-bookmark.ribbon-top:after {
+    border-width: 1.3rem;
+    border-top-width: 0;
+    border-bottom-color: transparent;
+    border-bottom-width: 0.5rem;
+}
+
+.jm-faq .accordion-button {
+    font-size: 1.2rem;
+}
+
+.jm-review-icon svg {
+    width: 50px;
+    height: 50px;
+    color: var(--tblr-primary);
+}
+
+.jm-review-icon {
+    gap: 15px;
+}
+
+.jm-footer-menu {
+    gap: 20px;
+}
+
+button.link.jm-join-link {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    font-weight: 600;
+    background: transparent;
+}
+
+[dir="rtl"] button.link.jm-join-link {
+    right: unset;
+    left: 10px;
+}
+
+.jm-join-link {
+    color: var(--tblr-primary);
+}
+
+.jm-meeting-join {
+    background-color: var(--white-bg-page);
+}
+
+.link {
+    color: var(--tblr-primary);
+    font-weight: 600;
+}
+
+.jm-home-bg h2 {
+    color: var(--tblr-white);
+}
+
+.input-group {
+    box-shadow: none;
+}
+
+#cover-spin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 9999;
+    display: block;
+}
+
+.logo-image {
+    height: 2rem;
+    width: auto;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#cover-spin::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 48%;
+    top: 40%;
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    border-color: var(--bs-primary);
+    border-top-color: transparent;
+    border-width: 4px;
+    border-radius: 50%;
+    -webkit-animation: spin 0.8s linear infinite;
+    animation: spin 0.8s linear infinite;
+}
+
+.navbar-logo {
+    width: auto;
+    height: 2rem;
+}
+
+[data-bs-theme=dark] .toast-header {
+    background: unset;
+    color: var(--tblr-white);
+}
+
+.pricing-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    vertical-align: bottom;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured {
+    z-index: 1;
+    border: 2px solid var(--tblr-primary);
+    order: -1;
+    transform: scale(1.05);
+}
+
+/* Demo CSS Start */
+.z-50 {
+    z-index: 50;
+}
+
+.start-8 {
+    inset-inline-end: 2rem;
+}
+
+.bottom-8 {
+    bottom: 3rem;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.duration-300 {
+    transition-duration: .3s;
+}
+
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+}
+
+.bg-\[\#262626\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(38 38 38 / var(--tw-bg-opacity, 1));
+}
+
+[data-bs-theme=dark] .bg-\[\#262626\] {
+    --tw-bg-opacity: 1;
+    background-color: white;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.size-12 {
+    width: 3rem;
+    height: 3rem;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+/* Demo CSS End */
+
+/*-- Responsive css start here --*/
+/*--mobile css start here--*/
+@media (min-width: 768px) {
+    .featured {
+        order: unset;
+        margin-top: 0;
+        margin-bottom: 0;
+        box-shadow: 0 0 4px rgba(var(--tblr-body-color-rgb), .04);
+        border-radius: 8px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    :host,
+    :root {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .featured {
+        transform: unset;
+    }
+
+    .navbar-toggler {
+        color: var(--tblr-white);
+    }
+
+    .nav-link-icon {
+        color: var(--tblr-white);
+    }
+
+    .navbar .navbar-nav .nav-link {
+        color: var(--tblr-white);
+    }
+
+    .jm-homepage .navbar {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        background-color: var(--tblr-primary);
+    }
+
+    .jm-home-bg.bg-cover {
+        min-height: 50vh !important;
+    }
+
+    .jm-meeting-join {
+        margin: 0;
+    }
+
+    .section {
+        padding: 3rem 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .jm-about-bigicon svg.icon {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/*--ipad css start here--*/
+@media only screen and (min-width:768px) and (max-width:959px) {
+    .jm-home-bg.bg-cover {
+        min-height: 50vh !important;
+    }
+
+    .section {
+        padding: 3rem 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .jm-about-bigicon svg.icon {
+        height: 200px;
+        width: 200px;
+    }
+
+    .jm-footer-menu {
+        justify-content: space-between;
+    }
+}
+
+/*--ipad  pro css start here--*/
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+    .jm-home-bg.bg-cover {
+        min-height: 50vh !important;
+    }
+}

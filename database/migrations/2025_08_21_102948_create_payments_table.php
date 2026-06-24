@@ -1,0 +1,42 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('payments', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->unsignedInteger('user_id')->index('user_id');
+            $table->unsignedInteger('plan_id')->index('plan_id');
+            $table->string('payment_id', 128)->index('payment_id');
+            $table->string('invoice_id', 128)->nullable()->index('invoice_id');
+            $table->string('gateway', 32)->index('gateway');
+            $table->string('amount', 32);
+            $table->string('currency', 12);
+            $table->string('interval', 16)->index('interval');
+            $table->string('status', 16)->index('status');
+            $table->text('product')->nullable();
+            $table->text('coupon')->nullable();
+            $table->text('tax_rates')->nullable();
+            $table->text('seller')->nullable();
+            $table->text('customer')->nullable();
+            $table->timestamps();
+            $table->softDeletes();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('payments');
+    }
+};

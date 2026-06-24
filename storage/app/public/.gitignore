@@ -1,0 +1,6 @@
+avatars
+file_uploads
+images/*
+!images/FAVICON.png
+!images/PRIMARY_LOGO.png
+!images/SECONDARY_LOGO.png

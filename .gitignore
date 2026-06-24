@@ -1,0 +1,8 @@
+.env
+!vendor/froiden
+/vendor
+public/storage
+server/node_modules
+storage/installed
+system/cors/app.php
+addons
